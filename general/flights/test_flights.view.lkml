@@ -20,6 +20,7 @@ view: test_flights {
 
   measure: total_distance {
     type: sum
-    sql: ${distance} ;;
+    sql: ${distance}
+    ;;
   }
 }
