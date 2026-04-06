@@ -6,7 +6,7 @@ include: "/z_tests/*.lkml"
 explore: airports {
   group_label: "FAA"
 }
-
+explore: test_flights {}
 explore: flights {
   group_label: "FAA"
   description: "Start here for information about flights!"
