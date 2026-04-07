@@ -1,4 +1,4 @@
-## this is updated
+## this is updated again
 
 view: aircraft {
   sql_table_name: `cloud-training-demos.looker_flights.aircraft` ;;
