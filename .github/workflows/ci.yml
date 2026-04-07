@@ -1,27 +1,25 @@
 name: Looker CI
-
+ 
 on:
   pull_request:
     branches:
-      - main
-
+      - master
+ 
 jobs:
   lookml-check:
     runs-on: ubuntu-latest
-
+ 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
-
-      - name: Run LookML check
+ 
+      - name: Run LookML Check
         run: |
-          echo "running the ci validation..."
-
-          if ls general/flights/*.lkml > /dev/null 2>&1; then
-            echo "LookML file found"
+          echo "Running CI validation..."
+ 
+          if ls general/flights/*.lkml 1> /dev/null 2>&1; then
+            echo "LookML files found"
           else
-            echo "no LookML file found"
-          exit 1
+            echo "No LookML files found"
+            exit 1
           fi
-
-          
