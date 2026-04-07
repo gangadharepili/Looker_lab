@@ -1,4 +1,3 @@
-
 name: Looker CI
 
 on:
@@ -18,7 +17,7 @@ jobs:
         run: |
           echo "running the ci validation..."
 
-          if ls *.lkml > /dev/null 2>&1; then
+          if ls general/looker/*.lkml > /dev/null 2>&1; then
             echo "LookML file found"
           else
             echo "no LookML file found"
